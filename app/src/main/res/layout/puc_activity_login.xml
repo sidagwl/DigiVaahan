@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/background_light"
+    android:fillViewport="true"
+    android:focusableInTouchMode="true">
+
+    <RelativeLayout
+        android:id="@+id/UserLogin"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/PUCLoginTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Login to your Account"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="#ff000000"
+            android:textSize="28.0sp"
+            android:textStyle="bold" />
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/PUCLoginUIDAIField"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/PUCLoginTitle"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20.0sp"
+            android:layout_marginRight="20.0sp"
+            android:paddingBottom="20.0sp"
+            android:paddingTop="40.0sp"
+            android:textSize="18.0sp"
+            android:theme="@style/EditTextHint"
+            >
+
+            <EditText
+                android:id="@+id/PUCLoginUIDAI"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter your UIDAI"
+                android:inputType="number"
+                android:textColor="#ff000000"
+                android:textColorHint="#ff757575"
+                android:textSize="18.0sp" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/PUCLoginPasswordField"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/PUCLoginUIDAIField"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20.0sp"
+            android:layout_marginRight="20.0sp"
+            android:paddingBottom="20.0sp"
+            android:paddingTop="20.0sp"
+            android:textSize="18.0sp"
+            android:theme="@style/EditTextHint">
+
+            <EditText
+                android:id="@+id/PUCLoginPassword"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter your Password"
+                android:inputType="textPassword"
+                android:textColor="#ff000000"
+                android:textColorHint="#ff757575"
+                android:textSize="18.0sp" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/PUCLoginStateField"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/PUCLoginPasswordField"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="18.0sp"
+            android:layout_marginRight="20.0sp"
+            android:paddingBottom="40.0sp"
+            android:paddingTop="20.0sp"
+            android:textSize="18.0sp">
+
+            <Spinner
+                android:id="@+id/PUCLoginStates"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:layout_marginLeft="6.0dip"
+                android:layout_marginRight="6.0dip"
+                android:layout_marginTop="2.0dip"
+                android:background="#ff757575" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/PUCLoginRTOField"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/PUCLoginStateField"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="18.0sp"
+            android:layout_marginRight="20.0sp"
+            android:paddingBottom="40.0sp"
+            android:paddingTop="20.0sp"
+            android:textSize="18.0sp">
+
+            <Spinner
+                android:id="@+id/PUCLoginRTOs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:layout_marginLeft="6.0dip"
+                android:layout_marginRight="6.0dip"
+                android:layout_marginTop="2.0dip"
+                android:background="#ff757575" />
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/PUCLoginButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/PUCLoginRTOField"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20.0sp"
+            android:layout_marginRight="20.0sp"
+            android:background="@color/colorPrimaryDark"
+            android:text="Login"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="#ffffffff"
+            android:textSize="16.0sp"
+            android:textStyle="normal"/>
+    </RelativeLayout>
+</ScrollView>

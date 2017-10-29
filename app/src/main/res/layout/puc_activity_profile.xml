@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/background_light"
+    android:fillViewport="true"
+    android:focusableInTouchMode="true">
+
+    <RelativeLayout
+        android:id="@+id/PUCProfile"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/PUCProfileTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Profile"
+            android:background="@color/colorPrimaryDark"
+            android:padding="8dp"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:textSize="28.0sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"/>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/PUCProfileTable"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/PUCProfileTitle"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20.0sp"
+            android:layout_marginRight="20.0sp"
+            android:padding="8dp"
+            android:textSize="18.0sp"
+            android:background="@drawable/border_3"
+            >
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:shrinkColumns="*"
+                android:stretchColumns="*">
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/PUCProfileUIDAI"
+                        android:background="@drawable/border_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="UIDAI"
+                        android:padding="12dp"
+                        android:textAlignment="center"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/PUCProfileUIDAIText"
+                        android:background="@drawable/border_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:padding="12dp"
+                        android:text=""
+                        android:textAlignment="center"
+                        android:textSize="18dp" />
+                </TableRow>
+
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/PUCProfileName"
+                        android:background="@drawable/border_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Name"
+                        android:padding="12dp"
+                        android:textAlignment="center"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/PUCProfileNameText"
+                        android:background="@drawable/border_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:padding="12dp"
+                        android:text=""
+                        android:textAlignment="center"
+                        android:textSize="18dp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/PUCProfileContactNumber"
+                        android:background="@drawable/border_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Contact No"
+                        android:padding="12dp"
+                        android:textAlignment="center"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/PUCProfileContactNumberText"
+                        android:background="@drawable/border_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text=""
+                        android:padding="12dp"
+                        android:textAlignment="center"
+                        android:textSize="18dp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/PUCProfileAddress"
+                        android:background="@drawable/border_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Address"
+                        android:padding="12dp"
+                        android:textAlignment="center"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/PUCProfileAddressText"
+                        android:background="@drawable/border_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text=""
+                        android:padding="12dp"
+                        android:textAlignment="center"
+                        android:textSize="18dp"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/PUCProfileEmail"
+                        android:background="@drawable/border_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Email"
+                        android:padding="12dp"
+                        android:textAlignment="center"
+                        android:textSize="18dp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/PUCProfileEmailText"
+                        android:background="@drawable/border_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text=""
+                        android:padding="12dp"
+                        android:textAlignment="center"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        />
+                </TableRow>
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/PUCProfileFirm"
+                        android:background="@drawable/border_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Firm Name"
+                        android:padding="12dp"
+                        android:textAlignment="center"
+                        android:textSize="18dp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/PUCProfileFirmText"
+                        android:background="@drawable/border_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text=""
+                        android:padding="12dp"
+                        android:textAlignment="center"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        />
+                </TableRow>
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/PUCProfileState"
+                        android:background="@drawable/border_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="State"
+                        android:padding="12dp"
+                        android:textAlignment="center"
+                        android:textSize="18dp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/PUCProfileStateText"
+                        android:background="@drawable/border_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text=""
+                        android:padding="12dp"
+                        android:textAlignment="center"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        />
+                </TableRow>
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/PUCProfileCity"
+                        android:background="@drawable/border_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="City"
+                        android:padding="12dp"
+                        android:textAlignment="center"
+                        android:textSize="18dp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/PUCProfileCityText"
+                        android:background="@drawable/border_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text=""
+                        android:padding="12dp"
+                        android:textAlignment="center"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/PUCProfilePinCode"
+                        android:background="@drawable/border_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Pin Code"
+                        android:padding="12dp"
+                        android:textAlignment="center"
+                        android:textSize="18dp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/PUCProfilePinCodeText"
+                        android:background="@drawable/border_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text=""
+                        android:padding="12dp"
+                        android:textAlignment="center"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        />
+                </TableRow>
+
+
+            </TableLayout>
+
+        </android.support.design.widget.TextInputLayout>
+        <Button
+            android:id="@+id/PUCProfileEditButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/PUCProfileTable"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20.0dp"
+            android:layout_marginRight="20.0dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/colorPrimaryDark"
+            android:text="Edit Profile"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="#ffffffff"
+            android:textSize="16.0sp"
+            android:textStyle="normal"/>
+
+    </RelativeLayout>
+</ScrollView>

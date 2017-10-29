@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+android:background="@android:color/background_light"
+android:fillViewport="true"
+    android:focusableInTouchMode="true">
+
+<RelativeLayout
+    android:id="@+id/Cr"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical">
+
+    <TextView
+        android:id="@+id/CreateAccountTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Create an Account"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#ff000000"
+        android:textSize="28.0sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/CreateAccountText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/CreateAccountTitle"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="60.0sp"
+        android:paddingTop="20.0sp"
+        android:text="We'll help you create a new account in few easy steps."
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#ff757575"
+        android:textSize="16.0sp"
+        android:textStyle="normal" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/CreateAccountUIDAIField"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/CreateAccountText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20.0sp"
+        android:layout_marginRight="20.0sp"
+        android:paddingBottom="40.0sp"
+        android:paddingTop="40.0sp"
+        android:textSize="18.0sp"
+        android:theme="@style/EditTextHint"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/CreateAccountUIDAI"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your UIDAI"
+            android:inputType="number"
+            android:textColor="#ff000000"
+            android:textColorHint="#ff757575"
+            android:textSize="18.0sp" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/CreateAccountNameField"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/CreateAccountTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20.0sp"
+        android:layout_marginRight="20.0sp"
+        android:paddingBottom="5.0sp"
+        android:paddingTop="40.0sp"
+        android:textSize="18.0sp"
+        android:theme="@style/EditTextHint"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/CreateAccountName"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your Name"
+            android:inputType="textPersonName"
+            android:textColor="#ff000000"
+            android:textColorHint="#ff757575"
+            android:textSize="18.0sp" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/CreateAccountContactField"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/CreateAccountNameField"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20.0sp"
+        android:layout_marginRight="20.0sp"
+        android:paddingBottom="5.0sp"
+        android:paddingTop="5.0sp"
+        android:textSize="18.0sp"
+        android:theme="@style/EditTextHint"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/CreateAccountContact"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your Contact Number"
+            android:inputType="phone"
+            android:textColor="#ff000000"
+            android:textColorHint="#ff757575"
+            android:textSize="18.0sp" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/CreateAccountAddressField"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/CreateAccountContactField"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20.0sp"
+        android:layout_marginRight="20.0sp"
+        android:paddingBottom="5.0sp"
+        android:paddingTop="5.0sp"
+        android:textSize="18.0sp"
+        android:theme="@style/EditTextHint"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/CreateAccountAddress"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your Address"
+            android:inputType="textPostalAddress"
+            android:textColor="#ff000000"
+            android:textColorHint="#ff757575"
+            android:textSize="18.0sp" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/CreateAccountStateField"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/CreateAccountAddressField"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="18.0sp"
+        android:layout_marginRight="20.0sp"
+        android:paddingBottom="10.0sp"
+        android:paddingTop="20.0sp"
+        android:textSize="18.0sp"
+        android:visibility="gone">
+
+        <Spinner
+            android:id="@+id/CreateAccountStates"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:layout_marginLeft="6.0dip"
+            android:layout_marginRight="6.0dip"
+            android:layout_marginTop="2.0dip"
+            android:background="#ff757575" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/CreateAccountDOBField"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/CreateAccountStateField"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20.0sp"
+        android:layout_marginRight="20.0sp"
+        android:paddingBottom="5.0sp"
+        android:paddingTop="5.0sp"
+        android:textSize="18.0sp"
+        android:theme="@style/EditTextHint"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/CreateAccountDOB"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:hint="Enter your Date of Birth"
+            android:inputType="date"
+            android:textColor="#ff000000"
+            android:textColorHint="#ff757575"
+            android:textSize="18.0sp" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/CreateAccountPasswordField"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/CreateAccountDOBField"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20.0sp"
+        android:layout_marginRight="20.0sp"
+        android:paddingBottom="5.0sp"
+        android:paddingTop="10.0sp"
+        android:textSize="18.0sp"
+        android:theme="@style/EditTextHint"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/CreateAccountPassword"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your Password"
+            android:inputType="textPassword"
+            android:textColor="#ff000000"
+            android:textColorHint="#ff757575"
+            android:textSize="18.0sp" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/CreateAccountConfirmPasswordField"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/CreateAccountPasswordField"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20.0sp"
+        android:layout_marginRight="20.0sp"
+        android:paddingBottom="40.0sp"
+        android:paddingTop="5.0sp"
+        android:textSize="18.0sp"
+        android:theme="@style/EditTextHint"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/CreateAccountConfirmPassword"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Confirm your Password"
+            android:inputType="textPassword"
+            android:textColor="#ff000000"
+            android:textColorHint="#ff757575"
+            android:textSize="18.0sp"
+            android:theme="@style/EditTextHint" />
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/CreateAccountNextButton1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/CreateAccountUIDAIField"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20.0sp"
+        android:layout_marginRight="20.0sp"
+        android:background="@color/colorPrimaryDark"
+        android:text="Next"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#ffffffff"
+        android:textSize="16.0sp"
+        android:textStyle="normal" />
+
+    <Button
+        android:id="@+id/CreateAccountNextButton2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/CreateAccountUIDAIField"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20.0sp"
+        android:layout_marginRight="20.0sp"
+        android:background="@color/colorPrimaryDark"
+        android:text="Next"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#ffffffff"
+        android:textSize="16.0sp"
+        android:textStyle="normal"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/CreateAccountNextButton3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/CreateAccountConfirmPasswordField"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20.0sp"
+        android:layout_marginRight="20.0sp"
+        android:background="@color/colorPrimaryDark"
+        android:text="Register"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#ffffffff"
+        android:textSize="16.0sp"
+        android:textStyle="normal"
+        android:visibility="gone" />
+</RelativeLayout>
+</ScrollView>
